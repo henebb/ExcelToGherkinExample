@@ -35,15 +35,29 @@ namespace ExcelToGherkinExample
             }
 
             StringBuilder sb = new StringBuilder();
-
+            bool isFirstRow = true;
             for (int i = 0; i < numRows; i++)
             {
                 List<string> rowValues = excelData.GetRowValues(i);
 
+                bool isFirstColumn = true;
                 foreach (string value in rowValues)
                 {
-                    sb.AppendFormat("| {0} ", value);
+                    if (isFirstColumn)
+                    {
+                        sb.Append("    ");
+                        isFirstColumn = false;
+                    }
+                    if (isFirstRow)
+                    {
+                        sb.AppendFormat("| {0} ", value);
+                    }
+                    else
+                    {
+                        sb.AppendFormat("|  {0}", value);
+                    }
                 }
+                isFirstRow = false;
                 sb.Append("|\r\n");
             }
 

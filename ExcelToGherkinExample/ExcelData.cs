@@ -17,7 +17,7 @@ namespace ExcelToGherkinExample
             CalculateMaxColumnWidths();
 
             IEnumerable<ExcelCell> excelCells = _cells.Where(c => c.Row.Id == rowIndex);
-            return excelCells.Select(c => c.Value.PadRight(c.Column.Width)).ToList();
+            return excelCells.Select(c => c.Value.PadRight(c.Column.Width + 1)).ToList();
         }
 
         private void CalculateMaxColumnWidths()
