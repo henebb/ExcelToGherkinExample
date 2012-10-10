@@ -1,7 +1,9 @@
 ﻿Excel to Gherking Scenario Outline Example
 ==========================================
 
-An Excel Add-in to easily create a pretty layout from an Excel selection to a Scenario Outline example.
+...or Excel to SpecFlow. But Gherkin is the language used :-)
+
+Anyway, an Excel Add-in to easily create a pretty layout from an Excel selection to a Scenario Outline example.
 
 ![Quick start](https://raw.github.com/henebb/ExcelToGherkinExample/master/Quick.png)
 
