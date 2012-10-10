@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelToGherkinExample", "ExcelToGherkinExample\ExcelToGherkinExample.csproj", "{63CB7C2B-2BBD-4AB0-8247-F28081E3BDF6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{76CC48EF-242A-4984-B44D-D4B2C9F454A1}"
+	ProjectSection(SolutionItems) = preProject
+		Quick.png = Quick.png
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
